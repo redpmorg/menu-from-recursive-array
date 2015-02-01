@@ -1,0 +1,95 @@
+/* globaal styles */
+body
+{
+    font-size: 1em;
+    font-family: Arial;
+    font-weight: normal;
+}
+
+/* menu styling */
+.navigate ul
+{
+		margin:0!important;
+		padding: 0!important;
+		list-style: none!important;
+		list-style-position: outside!important;
+}
+.navigate a
+{
+    color: inherit;
+}
+.navigate li.inside , .navigate li.outside
+{
+    display: block;
+    padding: 0.1em 1em;
+    text-decoration: none;
+    color: black;
+    background-color: inherit;
+}
+
+.navigate li.inside:hover , .navigate li.outside:hover
+{
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+.ismain
+{
+		color: #fff!important; border-right: 1px solid white;
+}
+
+.navigate li .outside ul
+{
+    margin-left: 103% !important;
+}
+
+ul.navigate
+{
+    float: left;
+    width: 100%;
+    margin: 0;
+    background-color: #3136d6;
+    z-index: +1;
+    padding: 0;
+}
+
+ul.navigate li
+{
+    float: left;
+    position: relative;
+}
+.navigate .outside li
+{
+    margin: 0.2em;
+    padding: 0.2em 1em !important;
+}
+ul.navigate li:hover > ul
+{
+    z-index: +2;
+    visibility: visible;
+}
+ul.navigate li ul
+{
+    white-space: nowrap;
+    visibility: hidden;
+    position: absolute;
+    z-index: +1;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    border: 1px solid #E4E2E2;
+}
+ul.navigate li ul li ul
+{
+    top: 0;margin: 0.2em;
+}
+ul.navigate li ul li
+{
+    float: none;
+    border: 0;
+    min-width: 3em;
+    margin: 0.2em;
+    padding: 0.2em;
+    display: block; /* block inside list more sensitive hover */
+}
